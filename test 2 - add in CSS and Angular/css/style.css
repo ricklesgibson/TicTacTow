@@ -1,0 +1,25 @@
+#container {
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+
+}
+
+.square {
+  border: 2px solid purple;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 0 auto;
+
+}
+
+.cell {
+
+    border: orange 2px solid; 
+    display: inline-block;
+  }
+
+  .selected {
+    background-color: lightgray;  
+  }

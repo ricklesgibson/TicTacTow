@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/angular.min.js"></script>
+<script src="js/tictactoelogic.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<title>Totally Awesome Tic Tac Toe</title>
+</head>
+<body>
+
+<div ng-app="AngularInputsApp" ng-controller="AngularInputsCtrl" >
+
+  <div id="container">
+    <div 
+    ng-repeat="row in board track by $index">
+
+    <div class="square"  ng-repeat="cell in row track by $index" ng-click="makeMove($parent.$index, $index)">
+    {{ cell == "" ? "&nbsp;" : cell}}
+    {{$parent.$index}} {{$index}}
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
